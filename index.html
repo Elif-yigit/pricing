@@ -30,25 +30,25 @@
       </div>
     </div>
 
-    <div class="pricing" >
+    <div class="pricing-info" >
       <div class="pricing-text">
-        <h2>100K PAGEVIEWS</h2>
+        <h2> <span id="page">100</span>K PAGEVIEWS</h2>
 
         <input
           type="range"
-          min="10"
-          max="100"
+          min="1"
+          max="32"
           step="5"
-          value="15"
+          value="16"
           id="pageViewRange"
         />
         <p id="pageViews">15</p>
 
-        <h3>$16.00 <span>/ month</span></h3>
+        <h3>$<span id="pricing">16</span> .00/ <span id="period"> month </span></h3>
         <div class="toggle-switch">
           <p>Monthly Billing</p>
           <label class="switch">
-            <input type="checkbox" checked />
+            <input type="checkbox" checked  id ="billingType"/>
             <span class="slider round"></span>
           </label>
            <p>Yearly Billing</p>

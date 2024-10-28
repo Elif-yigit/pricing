@@ -67,100 +67,90 @@
 
 .switch {
   
-   position:relative;
-   display: flex;
-   width: 43px;
-   height: 23px;
+  position:relative;
+  display: flex;
+  width: 43px;
+  height: 23px;
 
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(207, 216, 239, 1);
- 
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(207, 216, 239, 1);
+
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 4px;
-  bottom: 4px;
-  background-color: rgba(255, 255, 255, 1);
+ position: absolute;
+ content: "";
+ height: 14px;
+ width: 14px;
+ left: 4px;
+ bottom: 4px;
+ background-color: rgba(255, 255, 255, 1);
 
 }
 
-.input:checked + .slider {
-  background-color: rgba(122, 234, 223, 1);
+input:checked + .slider {
+ background-color: rgba(122, 234, 223, 1);
 }
 
-.input:focus + .slider {
-  box-shadow: 0 0 1px rgba(122, 234, 223, 1);
+input:focus + .slider {
+ box-shadow: 0 0 1px rgba(122, 234, 223, 1);
 }
 
 
-.input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
 }
 
 .slider.round {
-  border-radius: 15px;
+ border-radius: 15px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
-}
-
-.pricing {
-  position: absolute;
-  top: 234px;
-  left: 24px;
-  z-index: 3;
-}
-
-.pricing-text {
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-top-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 8px;
-  border-color: rgba(127, 137, 185, 0.15);
-  box-shadow: 0px 20px 46px -5px rgb(127 137 185 / 30%);
-  position: relative;
-  width: 327px;
-  background-color: white;
-
-}
-
-.pricing h2{
-    font-family: Manrope;
-    font-size: 12px;
-    font-weight: 800;
-    line-height: 16.39px;
-    letter-spacing: 1.7142857313156128px;
-    text-align: center;
-    color: rgba(132, 142, 173, 1);
-    padding: 25px;
+ border-radius: 50%;
 }
 
 
+.pricing-text h2{
+     font-family: Manrope;
+   font-size: 12px;
+   font-weight: 800;
+   line-height: 16.39px;
+   letter-spacing: 1.7142857313156128px;
+   text-align: center;
+   color: rgba(132, 142, 173, 1);
+   padding: 25px;
+}
 
+
+.pricing-info{
+     border: 1px solid rgba(255, 255, 255, 1);
+   text-align: center;
+   border-radius: 8px;
+   border-color: rgba(127, 137, 185, 0.15);
+   box-shadow: 0px 20px 46px -5px rgb(127 137 185 / 30%);
+   position: absolute;
+   margin: 24px;
+   top: 234px;
+    z-index: 3;
+    left: 15px;
+    background-color: white;
+}
 
 .toggle-switch {
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
 }
 
 .list ul li {
